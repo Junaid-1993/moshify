@@ -23,6 +23,8 @@ body {
   font-size: 2.4rem;
   line-height: 1.5; /* 1 and half times of the current font size = 24 x 1.5 = 36px */
   color: var(--color-body);
+
+  margin: 1rem;
 }
 
 h1,
@@ -233,6 +235,27 @@ a {
 
 @media screen and (min-width: 1024px) {
   .btn {
+    font-size: 1.5rem;
+  }
+}
+
+/* Inputs */
+
+.input {
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  color: var(--color-headings);
+  font-size: 2rem;
+  outline: 0;
+  padding: 1.5rem 3.5rem;
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
     font-size: 1.5rem;
   }
 }
