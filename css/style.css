@@ -26,8 +26,6 @@ body {
   font-size: 2rem;
   line-height: 1.5; /* 1 and half times of the current font size = 24 x 1.5 = 36px */
   color: var(--color-body);
-
-  margin: 4rem;
 }
 
 h1,
@@ -203,7 +201,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -295,6 +293,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -754,13 +753,19 @@ a {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
   justify-items: center;
   max-width: 750px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 425px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -925,3 +930,15 @@ a {
     font-size: 1.6rem;
   }
 }
+
+/* Sign-up Callout */
+
+.callout-signup {
+  transform: translateY(5rem);
+}
+
+/* @media screen and (min-width: 396px) {
+  .block-domain {
+    background-color: blue;
+  }
+} */
